@@ -5,7 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/shima-maleki-portfolio/', // Replace with your repository name
+  base: 'shima-maleki.github.io', // Replace with your repository name
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './client/src'),
