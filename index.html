@@ -1,100 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Shima Maleki | Data Analyst</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shima Maleki | Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="assets/shima.jpg" alt="Shima Maleki" class="profile-img"/>
-            <h1>Shima Maleki</h1>
-            <p class="tagline">Data Analyst | SQL | Power BI | Python</p>
-            <div class="social-links">
-                <a href="mailto:shimamaleki95@yahoo.com">Email</a>
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
-                <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
-            </div>
+  <!-- Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Shima Maleki</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Shima Maleki</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()"> 
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div> 
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/shima.jpeg" alt="Shima Maleki profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Shima Maleki</h1>
+      <p class="section__text__p1">Data Analyst | Power BI | SQL | Python</p>
+      <br><br> 
+      <p class="section__text__p2">I transform data into insights to help businesses make data-driven decisions and improve performance through efficient reporting and visualization.</p>
+      <div class="btn-container"> 
+        <button class="btn btn-color-2" onclick="window.open('./assets/Shima_Maleki_Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/YOUR_LINKEDIN'" />
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/YOUR_GITHUB'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/shima.jpeg" alt="Shima Maleki" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Freelance & Internships<br />Power BI, SQL, Python</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Master's in Applied Data Science & AI</p>
+          </div>
         </div>
-    </header>
+        <div class="text-container">
+          <p>
+            I’m a data analyst with a passion for storytelling through dashboards and actionable insights. With strong experience in Power BI, SQL, and Python, I help teams gain clarity from complex data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>
-                Results-driven Data Analyst with a Master’s in Applied Data Science and AI. Skilled in SQL, Python, Power BI, and cloud databases (Azure SQL, AWS RDS), with a strong foundation in data modeling, visualization, and business intelligence. Proven ability to improve reporting efficiency and deliver insights that drive data-informed decision-making.
-            </p>
-        </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+      <div class="skills-column">
+        <h2 class="skills-sub-title">Technical Skills</h2>
+        <div class="skills-list">
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Power BI (DAX, Power Query)</h3></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL, T-SQL, Azure SQL</h3></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python, Pandas, NumPy</h3></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>ETL Pipelines, Data Warehousing</h3></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Machine Learning (Scikit-learn)</h3></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <ul class="skills">
-                <li>Python, SQL, T-SQL</li>
-                <li>Power BI, Excel, Jupyter Notebook</li>
-                <li>NumPy, Pandas, Matplotlib, Scikit-learn</li>
-                <li>Azure SQL, AWS RDS, PostgreSQL, MySQL</li>
-                <li>ETL Pipelines, Data Warehousing, Git/GitHub</li>
-            </ul>
-        </section>
+  <!-- Experience Section -->
+  <section id="experience">
+    <h1 class="title">Experience</h1>
+    <div class="experience-container">
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="position-info">
+            <h2>Freelance Data Analyst</h2>
+            <p>Remote | Feb 2025 – Present</p>
+          </div>
+        </div>
+        <div class="experience-details">
+          <ul>
+            <li>Created Power BI dashboards for 3+ clients to monitor sales, retention, and KPIs.</li>
+            <li>Automated reporting tasks, saving up to 60% time weekly.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="position-info">
+            <h2>Data Analytics Intern</h2>
+            <p>AI Core | Sep 2024 – Feb 2025</p>
+          </div>
+        </div>
+        <div class="experience-details">
+          <ul>
+            <li>Designed interactive Power BI dashboards from 150K+ records.</li>
+            <li>Improved reporting efficiency and enabled self-service analytics.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section>
-            <h2>Experience</h2>
-            <h3>Freelance Data Analyst (Feb 2025 – Present)</h3>
-            <ul>
-                <li>Built Power BI dashboards to track KPIs for 3+ clients.</li>
-                <li>Automated reporting workflows using Power Query and Excel Macros.</li>
-                <li>Helped increase client repeat purchases by 12% using churn insights.</li>
-            </ul>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Churn Dashboard" class="project-img"/>
+        </div>
+        <h2 class="project-title">Customer Churn Dashboard</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/YOUR_GITHUB/Customer-Churn-Dashboard'">GitHub</button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Vendor Dashboard" class="project-img"/>
+        </div>
+        <h2 class="project-title">Vendor Performance Analysis</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/YOUR_GITHUB/Vendor-Performance-Dashboard'">GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <h3>Data Analytics Intern — AI Core (Sep 2024 – Feb 2025)</h3>
-            <ul>
-                <li>Built dashboards using Power BI and Azure SQL (150K+ records).</li>
-                <li>Automated pipelines with DAX and Power Query.</li>
-                <li>Reduced manual reporting time by 40%.</li>
-            </ul>
-        </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:shimamaleki95@yahoo.com">shimamaleki95@yahoo.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
 
-        <section>
-            <h2>Projects</h2>
-
-            <h3>Customer Churn Analysis</h3>
-            <p>
-                Developed a Power BI dashboard to analyze telecom churn. Used slicers and DAX to show churn by tenure, contract type, and demographics.
-                <br><a href="https://github.com/YOUR_GITHUB/Customer-Churn-Dashboard" target="_blank">View Project</a>
-            </p>
-
-            <h3>Vendor Performance Analysis</h3>
-            <p>
-                Built a Power BI dashboard from PostgreSQL data to evaluate vendor performance across delivery, quality, and cost KPIs.
-                <br><a href="https://github.com/YOUR_GITHUB/Vendor-Performance-Dashboard" target="_blank">View Project</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Education & Certifications</h2>
-            <ul>
-                <li><strong>MSc Applied Data Science & AI</strong> – Cranfield University</li>
-                <li>Data Science Bootcamp – HyperionDev</li>
-                <li>AI Programming with Python – Udacity</li>
-                <li>AWS Machine Learning – Udacity</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Awards</h2>
-            <ul>
-                <li>3rd Place Capstone – HyperionDev Bootcamp (top 3 of 380+)</li>
-                <li>Certificate of Excellence – Michael Kors</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Shima Maleki</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <div class="nav-links-container"> 
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li> 
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul> 
+      </div>
+    </nav> 
+    <p>© 2025 Shima Maleki. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
