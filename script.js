@@ -1,3 +1,4 @@
+
 // Toggle hamburger menu on small screens
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
