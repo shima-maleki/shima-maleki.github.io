@@ -4,12 +4,821 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shima Maleki | Data Analyst</title>
+  <title>Shima Maleki | ML & AI Engineer</title>
+  <meta name="description" content="Portfolio of Shima Maleki - Junior ML/AI Engineer and Data Analyst. Explore machine learning projects, Power BI dashboards, and experience delivering analytics that drive decisions.">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1>Welcome to Shima Maleki's Portfolio</h1>
-  <p>This is a placeholder. Full HTML content was provided earlier.</p>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home">Shima Maleki</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta">
+          <a href="resume/Shima Maleki_Resume_Machine learning 2025 .pdf" class="btn btn-secondary btn-small" download>Resume</a>
+        </li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Junior ML & AI Engineer | Data Analyst</p>
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Shima Maleki</span></h1>
+        <h2 class="hero-subtitle">I build machine learning and BI that make decisions faster.</h2>
+        <p class="hero-description">Milton Keynes, UK | Open to hybrid, remote, and freelance engagements</p>
+        <div class="hero-badges">
+          <span class="badge">Python | SQL | scikit-learn</span>
+          <span class="badge">Power BI (DAX + Power Query)</span>
+          <span class="badge">Azure SQL | AWS RDS</span>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <h4>40%</h4>
+            <p>Reporting time reduced at AI Core</p>
+          </div>
+          <div class="metric-card">
+            <h4>Top 3</h4>
+            <p>Data science capstone (380+ peers)</p>
+          </div>
+          <div class="metric-card">
+            <h4>12%</h4>
+            <p>Increase in repeat purchases for a client</p>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume/Shima Maleki_Resume_Machine learning 2025 .pdf" class="btn btn-secondary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/malekishima/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/shima-maleki" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:shimamaleki95@yahoo.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="shima.jpg" alt="Shima Maleki - Data Scientist">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">I turn messy, multi-source data into ML-backed dashboards and stories stakeholders can act on.</p>
+          <p>With an MSc in Applied AI and hands-on work across freelancing and AI Core, I build the full pipeline: data cleaning, feature engineering, model validation, and BI dashboards. My goal is to land a junior ML/AI engineer role where I can keep shipping analytics that shorten decision cycles.</p>
+          <p>I'm comfortable pairing Python and SQL with Power BI to expose the "why" behind the numbers. Recent wins: cutting manual reporting by 40%, surfacing churn risk cohorts, and delivering vendor scorecards that guide renegotiations.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h4>60%</h4>
+                <p>Reporting Time Reduction</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-users"></i>
+              <div>
+                <h4>12%</h4>
+                <p>Customer Retention Boost</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-trophy"></i>
+              <div>
+                <h4>Top 3</h4>
+                <p>Capstone Project (380+ peers)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ML Focus Section -->
+  <section class="ml-focus">
+    <div class="container">
+      <div class="focus-header">
+        <h2 class="section-title">Where I Add ML Value</h2>
+        <p class="section-subtitle">Pairing data engineering, modeling, and BI to ship decisions, not just models</p>
+      </div>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <div class="focus-icon"><i class="fas fa-database"></i></div>
+          <h3>Data Foundations</h3>
+          <p>SQL/Power Query pipelines, star schemas, and validation checks that keep dashboards trustworthy.</p>
+          <ul>
+            <li>Azure SQL, AWS RDS, PostgreSQL</li>
+            <li>ETL, data quality rules, dimensional models</li>
+          </ul>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon"><i class="fas fa-robot"></i></div>
+          <h3>Modeling & Evaluation</h3>
+          <p>Feature engineering, ML baselines, and tuned models with clear success metrics for stakeholders.</p>
+          <ul>
+            <li>scikit-learn, XGBoost, cross-validation</li>
+            <li>Churn risk cohorts, ranking, segmentation</li>
+          </ul>
+        </div>
+        <div class="focus-card">
+          <div class="focus-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Decision Storytelling</h3>
+          <p>Power BI dashboards that tie model outputs to revenue, retention, and operational levers.</p>
+          <ul>
+            <li>DAX KPIs, drilldowns, executive summaries</li>
+            <li>Time-to-insight wins: -40% reporting effort</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Data Science & ML</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">SciPy</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Model Validation</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Analytics & BI</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">DAX</span>
+            <span class="skill-tag">Power Query</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">Data Storytelling</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Data Engineering</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">T-SQL</span>
+            <span class="skill-tag">ETL Pipelines</span>
+            <span class="skill-tag">Data Warehousing</span>
+            <span class="skill-tag">Azure SQL</span>
+            <span class="skill-tag">AWS RDS</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3>Databases & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Critical Thinking</span>
+            <span class="skill-tag">Collaboration</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>ML Ops & Delivery</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Model Deployment</span>
+            <span class="skill-tag">APIs</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Version Control</span>
+            <span class="skill-tag">Experiment Tracking</span>
+            <span class="skill-tag">Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Communication</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Storytelling</span>
+            <span class="skill-tag">Stakeholder Updates</span>
+            <span class="skill-tag">Executive Summaries</span>
+            <span class="skill-tag">Workshops</span>
+            <span class="skill-tag">Documentation</span>
+            <span class="skill-tag">Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Real projects that connect data pipelines, ML, and dashboards to business outcomes</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/sales-dashboard.jpg" alt="Sales Performance Dashboard">
+            <div class="project-overlay">
+              <a href="https://github.com/shima-maleki/Sales_Data_Analysis_Power_BI" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-heading">
+              <div>
+                <p class="project-label">Power BI | SQL | DAX</p>
+                <h3>Sales Performance Dashboard</h3>
+              </div>
+              <span class="pill">Reporting Efficiency</span>
+            </div>
+            <p>Connected Azure SQL and Excel sources to build a Power BI model that tracks revenue, AOV, retention, and category trends. Automated refreshes with Power Query to cut weekly reporting time by 40%.</p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-label">Sources</span>
+                <span class="metric-value">3</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Rows</span>
+                <span class="metric-value">150K</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Time Saved</span>
+                <span class="metric-value">40%</span>
+              </div>
+            </div>
+
+            <div class="technical-highlights">
+              <h4><i class="fas fa-code"></i> What I built</h4>
+              <ul>
+                <li>Star-schema model with fact sales and calendar dimensions for flexible slicing</li>
+                <li>DAX measures for YoY growth, AOV, retention cohorts, and KPI cards</li>
+                <li>Interactive drilldowns by channel, region, and product category</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Power Query</span>
+              <span class="tech-tag">DAX</span>
+              <span class="tech-tag">Azure SQL</span>
+              <span class="tech-tag">Data Modeling</span>
+            </div>
+
+            <div class="github-stats">
+              <a href="https://github.com/shima-maleki/Sales_Data_Analysis_Power_BI" target="_blank" class="stat">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/vendor-analysis.png" alt="Vendor Performance Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/shima-maleki/Vendor_Performance_Analysis" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-heading">
+              <div>
+                <p class="project-label">Power BI | SQL | Python</p>
+                <h3>Vendor Performance Analysis</h3>
+              </div>
+              <span class="pill">Supplier Health</span>
+            </div>
+            <p>Built a multi-table Power BI model to rank vendors on delivery, quality, and cost metrics. Cleaned delivery data with SQL and Python, then surfaced interactive scorecards that guide renegotiations and audits.</p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-label">Vendors</span>
+                <span class="metric-value">500+</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Metrics</span>
+                <span class="metric-value">15</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Impact</span>
+                <span class="metric-value">Risk down</span>
+              </div>
+            </div>
+
+            <div class="technical-highlights">
+              <h4><i class="fas fa-code"></i> What I built</h4>
+              <ul>
+                <li>Data cleaning in SQL + Power Query; joins across delivery, quality, and cost tables</li>
+                <li>Vendor score using rejection rate, freight costs, on-time delivery, and SLA breaches</li>
+                <li>Filters by category, lane, and time to spotlight underperforming vendors quickly</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">DAX</span>
+              <span class="tech-tag">Power Query</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Python</span>
+            </div>
+
+            <div class="github-stats">
+              <a href="https://github.com/shima-maleki/Vendor_Performance_Analysis" target="_blank" class="stat">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-image">
+            <img src="images/churn-analysis.png" alt="Customer Churn Analysis">
+            <div class="project-overlay">
+              <a href="https://github.com/shima-maleki/PowerBI-Customer-Churn-Analysis" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-heading">
+              <div>
+                <p class="project-label">Python | Power BI | SQL</p>
+                <h3>Telecom Customer Churn Analysis</h3>
+              </div>
+              <span class="pill">Retention Playbook</span>
+            </div>
+            <p>Analyzed churn drivers and built an interactive dashboard to surface at-risk customer cohorts. Cleaned and shaped data with Power Query and Python, then quantified ~26% churn and highlighted risky contract/payment mixes.</p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-label">Churn</span>
+                <span class="metric-value">~26%</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Focus</span>
+                <span class="metric-value">Retention</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Cohorts</span>
+                <span class="metric-value">4</span>
+              </div>
+            </div>
+
+            <div class="technical-highlights">
+              <h4><i class="fas fa-code"></i> What I built</h4>
+              <ul>
+                <li>Feature engineering on tenure, contract type, internet type, and payment method</li>
+                <li>DAX measures for churn rate, retention, and cohort comparisons</li>
+                <li>Risk slicing to spotlight month-to-month + electronic check users for retention offers</li>
+              </ul>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Power Query</span>
+              <span class="tech-tag">Cohort Analysis</span>
+            </div>
+
+            <div class="github-stats">
+              <a href="https://github.com/shima-maleki/PowerBI-Customer-Churn-Analysis" target="_blank" class="stat">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="https://github.com/shima-maleki/PowerBI-Customer-Churn-Analysis#demo" target="_blank" class="stat">
+                <i class="fas fa-chart-line"></i> Dashboard
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://dummyimage.com/800x520/0ea5e9/ffffff&text=Book+Recommendation+System" alt="Book Recommendation System">
+            <div class="project-overlay">
+              <a href="https://github.com/Bhardwaj-Saurabh/book-recommendation-system-using-collaborative-filtering" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-heading">
+              <div>
+                <p class="project-label">Python | Collaborative Filtering</p>
+                <h3>Book Recommendation System</h3>
+              </div>
+              <span class="pill">Personalization</span>
+            </div>
+            <p>Built user and item collaborative filtering to recommend books from sparse ratings. Cleaned interaction data, tuned similarity thresholds, and shipped top-N lists with popularity fallback for cold start.</p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-label">Users</span>
+                <span class="metric-value">50K+</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Items</span>
+                <span class="metric-value">200K+</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Goal</span>
+                <span class="metric-value">Top-N lift</span>
+              </div>
+            </div>
+            <div class="technical-highlights">
+              <h4><i class="fas fa-code"></i> What I built</h4>
+              <ul>
+                <li>Similarity-based recommenders with cosine distance and tuned neighborhoods</li>
+                <li>Cold-start strategy using popularity and genre priors</li>
+                <li>Validation with recall@k and coverage on holdout sets</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Recommenders</span>
+              <span class="tech-tag">Collaborative Filtering</span>
+            </div>
+            <div class="github-stats">
+              <a href="https://github.com/Bhardwaj-Saurabh/book-recommendation-system-using-collaborative-filtering" target="_blank" class="stat">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://dummyimage.com/800x520/1e293b/ffffff&text=Malware+Detection" alt="Microsoft Malware Detection">
+            <div class="project-overlay">
+              <a href="https://github.com/Bhardwaj-Saurabh/Microsoft_malware_detection" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-heading">
+              <div>
+                <p class="project-label">Python | Classification</p>
+                <h3>Microsoft Malware Detection</h3>
+              </div>
+              <span class="pill">Risk Scoring</span>
+            </div>
+            <p>Engineered features from system telemetry to classify malware vs clean records. Balanced precision and recall for security triage using tuned tree models and regularized baselines.</p>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-label">Classes</span>
+                <span class="metric-value">2</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Focus</span>
+                <span class="metric-value">Precision</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Data</span>
+                <span class="metric-value">Telemetry</span>
+              </div>
+            </div>
+            <div class="technical-highlights">
+              <h4><i class="fas fa-code"></i> What I built</h4>
+              <ul>
+                <li>Feature engineering across categorical and numeric telemetry signals</li>
+                <li>Gradient boosting and regularized logistic regression baselines</li>
+                <li>Threshold tuning to align alerts with ops triage capacity</li>
+              </ul>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">Classification</span>
+            </div>
+            <div class="github-stats">
+              <a href="https://github.com/Bhardwaj-Saurabh/Microsoft_malware_detection" target="_blank" class="stat">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="more-projects">
+        <a href="https://github.com/shima-maleki" target="_blank" class="btn btn-secondary">
+          View All Projects on GitHub <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Freelance Data Analyst</h3>
+              <span class="timeline-date">Feb 2025 - Present</span>
+            </div>
+            <p class="timeline-location">Remote | Self-Employed</p>
+            <ul class="timeline-details">
+              <li>Partnered with 3+ clients to build end-to-end analytics: ingest (SQL/Python), clean, model, and ship Power BI dashboards for sales, retention, and inventory</li>
+              <li>Automated refresh with Power Query and Excel macros; cut weekly reporting effort by up to 60% while keeping data quality checks in place</li>
+              <li>Used cohorting and basic churn scoring to surface retention patterns; repeat purchases lifted 12% for one client</li>
+            </ul>
+            <div class="timeline-skills">
+              <span>Power BI</span>
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Churn Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Analytics Intern</h3>
+              <span class="timeline-date">Sep 2024 - Feb 2025</span>
+            </div>
+            <p class="timeline-location">AI Core</p>
+            <ul class="timeline-details">
+              <li>Built Power BI dashboards from Azure SQL + Excel (~150K records) to track sales trends and customer behaviour; validated with SQL checks</li>
+              <li>Automated data shaping in Power Query; authored DAX measures for revenue growth, AOV, and retention to cut reporting time by 40%</li>
+              <li>Added cohort views and filters that exposed high-value segments, enabling faster product/marketing decisions</li>
+              <li>Experimented with Python feature engineering to prototype churn indicators feeding the dashboards</li>
+            </ul>
+            <div class="timeline-skills">
+              <span>Power BI</span>
+              <span>Azure SQL</span>
+              <span>Excel</span>
+              <span>DAX</span>
+              <span>Feature Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="education-grid">
+        <!-- Education -->
+        <div class="education-column">
+          <h3 class="column-title">
+            <i class="fas fa-graduation-cap"></i> Education
+          </h3>
+
+          <div class="education-card">
+            <div class="edu-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="edu-content">
+              <h4>MSc in Applied Artificial Intelligence</h4>
+              <p class="edu-institution">Cranfield University</p>
+              <p class="edu-details">
+                <strong>Key Modules:</strong> Deep Learning, Statistical Learning, Computer Vision,
+                Search & Optimisation, Data Visualisation
+              </p>
+              <ul class="edu-projects">
+                <li><strong>Thesis:</strong> Object Detection in Aerial Images using YOLOv5</li>
+                <li><strong>Group Project:</strong> Heart Failure Detection in Dense Areas via Computer Vision</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="edu-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="edu-content">
+              <h4>Data Science Bootcamp</h4>
+              <p class="edu-institution">HyperionDev</p>
+              <p class="edu-details">
+                Intensive program covering Python, Pandas, SQL, Machine Learning,
+                Data Visualisation, and Storytelling
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="education-column">
+          <h3 class="column-title">
+            <i class="fas fa-certificate"></i> Certifications & Awards
+          </h3>
+
+          <div class="cert-list">
+            <div class="cert-item">
+              <i class="fas fa-award"></i>
+              <div>
+                <h4>AWS Machine Learning Nanodegree</h4>
+                <p>Udacity</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <i class="fas fa-award"></i>
+              <div>
+                <h4>Machine Learning Specialization</h4>
+                <p>Stanford University</p>
+              </div>
+            </div>
+
+            <div class="cert-item">
+              <i class="fas fa-award"></i>
+              <div>
+                <h4>AI Programming with Python</h4>
+                <p>Udacity</p>
+              </div>
+            </div>
+
+            <div class="cert-item highlight-cert">
+              <i class="fas fa-trophy"></i>
+              <div>
+                <h4>Top 3 Capstone Project</h4>
+                <p>HyperionDev (380+ participants)</p>
+              </div>
+            </div>
+
+            <div class="cert-item highlight-cert">
+              <i class="fas fa-star"></i>
+              <div>
+                <h4>Certificate of Excellence</h4>
+                <p>Michael Kors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">Open to Junior ML/AI Engineer, Data Analyst, or hybrid roles where BI meets ML</p>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:shimamaleki95@yahoo.com">shimamaleki95@yahoo.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Milton Keynes, UK | Open to remote</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/malekishima/" target="_blank">linkedin.com/in/malekishima</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/shima-maleki" target="_blank">github.com/shima-maleki</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta">
+          <div class="cta-box">
+            <i class="fas fa-briefcase"></i>
+            <h3>Open to Opportunities</h3>
+            <p>Looking for Junior ML Engineer, AI Engineer, or Data Analyst positions</p>
+            <div class="cta-buttons">
+              <a href="resume/Shima Maleki_Resume_Machine learning 2025 .pdf" class="btn btn-primary" download>
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+              <a href="mailto:shimamaleki95@yahoo.com" class="btn btn-secondary">
+                <i class="fas fa-envelope"></i> Send Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Shima Maleki. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/malekishima/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/shima-maleki" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:shimamaleki95@yahoo.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <script src="script.js"></script>
 </body>
 </html>
